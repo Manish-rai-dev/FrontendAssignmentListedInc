@@ -1,8 +1,10 @@
-import React, {  useState } from "react";
+import  {  useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 
-export default function RowData({ item, index }) {
+export default function
+ RowData({ item, index })
+ {
   const [toggleSelect, setToggleSelect] = useState(false);
   const [selectedTags, setSelectedTags] = useState([]);
 
