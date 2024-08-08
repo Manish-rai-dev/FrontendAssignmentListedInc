@@ -3,7 +3,7 @@
     width: 100%;
     /* height: 100vh; */
     background:  #605BFF;
-    background: linear-gradient(100deg,  #605BFF 45%, rgba(248, 250, 255, 1) 45%);
+    background: linear-gradient(100deg,  #605BFF 50%, rgba(248, 250, 255, 1) 50%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -379,3 +379,29 @@ label {
         font-size: var(--fs-mobile-icons);
     }
 }
+.light-mode {
+    background: var(--lightbg);
+    color: var(--lightt);
+  }
+  
+  .dark-mode {
+    background: var(--darkbg);
+    color: var(--darkt);
+  }
+  /* SignIn.css */
+
+.light-mode {
+    background: var(--color-black); /* Original light background color */
+    color: #fff; /* Original text color */
+  }
+  
+  .dark-mode {
+    background: var(--color-black); /* Dark theme background color */
+    color: black; /* White text color for dark theme */
+  }
+  
+  /* Add any other specific element styles here */
+  .signin__page__container {
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  

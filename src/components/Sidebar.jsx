@@ -6,11 +6,12 @@ import Schedule from "../assets/Schedule/Iconly/Bold/Document.svg";
 import Calendar from "../assets/Calendar/Iconly/Bold/Calendar.svg";
 import Notification from "../assets/Notification/Iconly/Bold/Notification.svg";
 import  Settings from "../assets/Setting/Iconly/Bold/Setting.svg";
+import "./sidebar.css"
 import { useNavigate } from 'react-router-dom';
-const SideBar = () => {
+const SideBar = ({darkMode}) => {
 const navigate =useNavigate();
   return (
-    <div className="sidebar__container">
+    <div className={`sidebar ${darkMode ? "dark sidebar__container" : "light sidebar__container"}`}>
     <img src={ MobileLogo} alt="brand" style={{height:"35px", 
     textAlign:"center",
     marginTop:"15%",

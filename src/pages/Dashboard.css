@@ -934,3 +934,61 @@ td{ padding: 12px }
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  
+  :root {
+    --color-bg-light: #f4f4f4;
+    --color-bg-dark: #333;
+    --color-text-light: #333;
+    --color-text-dark: #f4f4f4;
+  }
+  
+  [data-theme="light"] {
+    --color-bg: var(--color-bg-light);
+    --color-text: var(--color-text-light);
+  }
+  
+  [data-theme="dark"] {
+    --color-bg: var(--color-bg-dark);
+    --color-text: var(--color-text-dark);
+  }
+  
+  .dashboard__container {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: ${({ darkMode }) => (darkMode ? 'flex-end' : 'flex-start')};
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-text);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon {
+    color: var(--color-bg);
+    font-size: 1rem;
+  }
+  
+  .main__dashboard__container {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+  
