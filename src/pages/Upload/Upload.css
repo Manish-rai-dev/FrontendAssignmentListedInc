@@ -1,0 +1,308 @@
+.headerPage{
+    display: flex; 
+    padding: 1rem; 
+    flex-direction: column; 
+    width: 100%; 
+    height: 100%; 
+    background: var(--bg-color);
+    padding-top: 4.5rem;
+    }
+    .upLoadCSVPage{
+        padding-left: 1rem;
+    padding-right: 1rem; 
+    padding-bottom: 1.5rem; 
+    font-weight: 600; 
+    color: 24px;
+    
+    }
+    @media (min-width: 1024px) { 
+        .upLoadCSVPage{
+            display: none; 
+    
+        }
+       }
+    
+    
+       .spinnerUpload{
+        animation: spin 1s linear infinite;
+        border-radius: 9999px; 
+        border-style: solid; 
+        height: 20px;
+        width: 20px;
+        border: var(--color-white);
+       }
+    
+       @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }; 
+      .UploadMainContainer{
+        display: flex; 
+    position: absolute; 
+    top: 1.25rem; 
+    right: 1.25rem; 
+    padding: 1rem; 
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    transition-property: all; 
+    color: #ffffff; 
+    border-radius: 0.25rem; 
+    background: rgb(250,0,51);
+      }
+      .innerUploadContainer{
+        display: flex; 
+    padding: 1rem; 
+    margin-left: auto;
+    margin-right: auto; 
+    flex-direction: column; 
+    width: 100%; 
+    border-radius: 0.5rem; 
+    height: 33rem;
+    background: var(--color-white);
+      }
+      @media (min-width: 768px) { 
+      .innerUploadContainer{
+      
+            width: 52.25rem;
+        
+      }
+       }
+    
+       .aboveInput{
+        display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 0.5rem; 
+    border-width: 1px; 
+    border-style: dashed; 
+    gap: 1rem; 
+    
+       }
+       .textFileUpload{
+        color: var(--text-light-grey);
+       }
+       .uploadBrowse{
+        cursor: pointer; 
+    color: var(--link-color);
+       }
+       .uploadBrowse:hover{
+        text-decoration: underline; 
+       }
+       .uploadRemove{
+        cursor: pointer; 
+    color: var(--text-alert-color);
+       }
+       .handleUploadData{
+    display: flex; 
+    color: #ffffff; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 0.5rem; 
+    gap: 0.25rem; 
+    margin-top: 8px;
+    height: 5.5rem;
+    background: var(--accent-color);
+       }
+    
+       .UploadText{
+        font-size: 1.25rem;
+    line-height: 1.75rem; 
+       }
+    
+       .tableScreenUpload{
+        margin-left: auto;
+        margin-right: auto; 
+        width: 100%; 
+        margin-top: 6.5rem;
+       }
+    
+    .tableHeadersUpload{
+    font-weight: 600; 
+    color: 24px;
+    font-size: 2.6rem;
+    color: var(--text-primary-color);
+    
+       }
+    
+       .overflowAutoUpdate{
+        overflow: auto; 
+       }
+       .rowUpload{
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin-top: 2rem; 
+    width: 1065px;
+    background: rgb(245,245,245);
+       }
+    
+       .columnDataUpload{
+        display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    gap: 0.5rem; 
+    
+       }
+       .width2Rem{
+        width: 8rem; 
+       }
+       .width8Rem{
+        width:8rem;
+       }
+       .width12Rem{
+        width:16.5rem;
+       }
+       .width10Rem{
+        width: 10rem;
+       }
+       .width11Rem{
+        width:15rem;
+       }
+       .width20Rem{
+        width:20rem;
+       }
+       .tableContainerUpload{
+        display: flex; 
+        padding: 1rem; 
+        text-transform: capitalize; 
+        justify-content: center; 
+        align-items: flex-start; 
+       }
+    
+    
+       /* css--row--data-file */
+    
+    
+       .containerRowData{
+        display: flex; 
+        margin-bottom: 1rem; 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        gap: 0.5rem; 
+        background: var(--color-white);
+       }
+    
+    
+       .itemMapsRows{
+    display: flex; 
+    padding: 1rem; 
+    justify-content: center; 
+    align-items: flex-start; 
+    
+       }
+    
+       .renderColumns{
+        display: flex; 
+    position: relative; 
+    padding: 1rem; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 0.25rem; 
+    width: 15rem;
+    
+       }
+       .renderTagRowData{
+        display: flex; 
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem; 
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 0.5rem; 
+    border-width: 1px; 
+    border-style: solid; 
+    cursor: pointer; 
+    gap: 0.25rem; 
+       }
+    
+       .arrowColorRow{
+        color: var(--text-light-grey);
+       }
+       .tagsMapperRow{
+        display: flex; 
+    overflow: auto; 
+    position: absolute; 
+    top: 3.5rem; 
+    z-index: 10; 
+    padding: 0.5rem; 
+    flex-direction: column; 
+    border-radius: 0.5rem; 
+    gap: 0.25rem; 
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+    width: 133.73px;
+    background: var(--color-white);
+    
+       }
+       .showRowTags
+       {
+        display: flex; 
+    padding: 1rem; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    border-radius: 0.5rem; 
+    cursor: pointer; 
+    height: 40px;
+    background: rgb(245,245,245);
+    
+       }
+    
+       .linkTextRows{
+        display: flex; 
+    padding: 1rem; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    width: 17.5rem;
+    color: var(--link-color);
+    
+    
+       }
+       .linkTextRows:hover {
+        text-decoration: underline; 
+        }
+    
+        .showRowPrefix{
+            display: flex; 
+    padding: 1rem; 
+    padding-top: 1.25rem; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 0.5rem; 
+    width: 40rem;
+        }
+    
+        .showRowSelectedTags{
+            display: flex; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; 
+    color: #ffffff; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 0.25rem; 
+    background: var(--accent-color);
+    color: 12px;
+    
+    
+    
+        }
+    
+        .selectedTagsRows
+        {
+            cursor: pointer; 
+    color: 14px;
+        }
+        .hidden{
+            display: none;
+        }
