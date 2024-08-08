@@ -360,6 +360,7 @@ label {
 .sign_to_ur_acc{
     font-weight: 400;
 }
+
 @media screen and (max-width:450px)
 {
     .signin__page__container{
