@@ -1,0 +1,380 @@
+/* ========SignIn-Page-Style's======== */
+.signin__page__container {
+    width: 100%;
+    /* height: 100vh; */
+    background:  #605BFF;
+    background: linear-gradient(100deg,  #605BFF 45%, rgba(248, 250, 255, 1) 45%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    /* overflow-y: hidden; */
+}
+
+.logo {
+    font-size: var(--fs-l);
+    font-weight: 700;
+    font-family: var(--ff-poppins);
+    color: var(--color-white);
+}
+.cover__circle{
+    border-radius: 50%;
+    background: #fff;
+    max-height: 22.4px;
+    max-width: 80px;
+}
+
+.form__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.board__logo {
+    color: var(--color-white);
+    font-size: var(--fs-vl);
+    line-height: var(--lh-vl);
+    font-weight: 700;
+    margin: auto 0;
+}
+
+/* Socials-Styles */
+.socials__wrapper {
+    margin-left: 9vw;
+}
+
+.socials__links {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    gap: 3rem;
+}
+
+.socials__links li a {
+    color: var(--color-white);
+    font-size: var(--fs-icons);
+}
+
+
+
+/* ========SignIn-FormGroup-Style's======== */
+.formgroup__container {
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0rem;
+}
+
+.signin__with__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    width: 96%;
+}
+
+.btn__primary {
+    background-color: var(--color-white);
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-right: 5px;
+    font-size: var(--fs-xs);
+    color: var(--text-light-dark);
+    font-weight: 200;
+    font-family: var(--ff-mont);
+    position: relative;
+    padding-left: 3.2rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+.btn__primary::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 14px;
+    background-image: url(../assets/google.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.siginin__apple::before {
+    background-image: url(../assets/apple.svg);
+}
+
+
+/* Form-Styles */
+.form__wrapper {
+    width: 96%;
+    max-width: 422px;
+    padding: 2.5rem;
+    background-color: var(--color-white);
+    border-radius: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: var(--ff-lato);
+    font-size: var(--fs-s);
+}
+
+.input__bar {
+    background-color: var(--color-light-dark);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 43px;
+    padding: 12px 16px;
+    line-height: 19px;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+.input__bar:focus {
+    background-color: var(--color-dark-shade);
+}
+
+.forgot__pass {
+    font-size: var(--fs-s);
+    font-family: var(--ff-lato);
+    color: var(--color-link);
+    margin: 1rem 0 2rem;
+}
+
+.signin__btn {
+    padding: 10px 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-family: var(--ff-mont);
+    background-color: #605BFF;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.form__footer {
+    text-align: center;
+    color: var(--text-light-dark);
+    font-family: var(--ff-lato);
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.form__footer span {
+    color: var(--color-link);
+    cursor:pointer
+}
+
+.headingTxt{
+    font-weight: 700;
+}
+
+
+.hidden_above{
+    display: none;
+   
+}
+.imageContainr{
+    position: relative;
+}
+.bgImage{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.overlay{
+    position: absolute;
+    top: 50%; /* Adjust top positioning as needed */
+    left: 2.8%; /* Adjust left positioning as needed */
+    transform: translate(-50%, -50%); /* Center the overlay image */
+    z-index: 1;
+    height: 30px;
+    width: auto;
+}
+.form__footer {
+    text-align: center;
+  }
+  
+  .form__footer span {
+    color: #007bff; /* Default color for "Register here" */
+    cursor: pointer;
+  }
+  
+
+@media screen and (max-width:1350px)
+{
+    .overlay{
+        left:3.5%;
+    }
+}
+
+@media screen and (max-width:1150px)
+{
+    .overlay{
+        left:4%;
+    }
+}
+
+/* ============Media-Queries-For-Tablets============ */
+@media screen and (max-width: 990px) {
+    .signin__page__container {
+        width: 100%;
+        /* height: 90vh; */
+        background: #605BFF;
+        background: linear-gradient(100deg, #605BFF 45%, rgba(248, 250, 255, 1) 45%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+
+    .imageContainr{
+        display: none;
+    }
+    .form__container {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 2rem;
+        flex-wrap: unset;
+    }
+    .hidden_above{
+        display: flex;
+        align-items: center;
+        color: black;
+        background: 
+        #605BFF;
+        font-size: 2.rem;
+        height: 13vh;
+        font-weight: 600;
+        margin-bottom: 8%;
+       
+        
+    }
+
+    .board__logo {
+        margin: unset;
+        color: #fff;
+    }
+    .hidden_below{
+        display: none;
+    }
+
+    .socials__wrapper {
+        margin-left: unset;
+        align-self: center;
+    }
+
+    .formgroup__container {
+        width: 100%;
+    }
+
+    .signin__with__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+        width: 96%;
+    }
+
+    .btn__primary {
+        width: 100%;
+        min-width: 46%;
+    }
+
+    .form__wrapper {
+        width: 100%;
+    }
+
+    .form__footer {
+        /* color: var(--color-white); */
+    }
+   
+
+    .btn__primary {
+        background-color: var(--color-white);
+        border: none;
+        outline: none;
+        padding: 10px;
+        padding-right: 5px;
+        font-size: var(--fs-xs);
+        color: var(--text-light-dark);
+        font-weight: 300;
+        font-family: var(--ff-mont);
+        position: relative;
+        padding-left: 2.5rem;
+        border-radius: 1.2rem;
+        cursor: pointer;
+    }
+
+    .btn__primary::before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 10px;
+    }
+    .signin__page__container {
+        color : black;
+        padding: 1rem;
+        background: none;
+    }
+ 
+    
+      .form__footer :first-of-type {
+        color: #007bff; /* Grey color for "Don't have an account?" */
+      }
+      .form__footer span{
+        display: block;
+        margin-top: 5px; 
+        cursor:pointer;
+      /* Adjust as needed */
+      }
+      .socials__links li a {
+        filter: grayscale(100%) contrast(200%) brightness(80%);
+        font-size: var(--fs-icons);
+    }
+      
+
+}
+.fontSign{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+}
+.sign_to_ur_acc{
+    font-weight: 400;
+}
+@media screen and (max-width:450px)
+{
+    .signin__page__container{
+        padding: 2rem;
+    }
+    .socials__links{
+        
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    gap: 2rem;
+
+    }
+    .socials__links li a {
+        filter: grayscale(100%) contrast(200%) brightness(80%);
+        font-size: var(--fs-mobile-icons);
+    }
+}
