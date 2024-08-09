@@ -75,6 +75,7 @@ export default function UploadData() {
       style={{
         Width:"596px",
         Height:"367px",
+        background:""
 
       }}
       >
