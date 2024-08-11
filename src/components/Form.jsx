@@ -31,6 +31,7 @@ const Form = () => {
   };
   
   
+  
   useEffect(()=>{
     setValue(localStorage.getItem('email'))
 },[])

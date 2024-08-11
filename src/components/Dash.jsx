@@ -8,15 +8,14 @@ import { useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 
 const Dash = () => {
-    const [isActive, setIsActive] = useState(false);
-    const [imageError, setImageError] = useState(false); // State to track if image failed to load
-    const toggleSidebar = () => {
-        const sidebarContainer = document.querySelector(".sidebar__container");
-        sidebarContainer?.classList.toggle("active");
-        setIsActive(!isActive);
-    };
+
+    const [imageError, setImageError] = useState(false);
+
+
 
     const user = localStorage.getItem('photoUrl');
+    console.log("User Photo URL:", user); // Log the photo URL to debug
+
     const navigate = useNavigate();
 
     const handleLogout = async () => {
@@ -38,28 +37,25 @@ const Dash = () => {
                     <img src={bell} alt="bell Icon" className="ri-notification-2-line" />
                 </button>
                 <div className="profile__icon">
-                    {
-                        user && !imageError ? (
-                            <img 
-                                src={user} 
-                                alt="User Profile" 
-                                onError={() => setImageError(true)} // Set imageError to true if the image fails to load
-                            />
-                        ) : (
-                            <FaUser /> // Fallback to FaUser icon if image fails to load
-                        )
-                    }
+                <div>
+                {user && !imageError ? (
+                    <img 
+                        src={user} 
+                        alt="User Profile" 
+                        referrerPolicy="no-referrer"
+                        onError={() => setImageError(true)} 
+                    />
+                ) : (
+                    <FaUser/>
+                )}
+            </div>
                     <ul className="profile__dropdown">
                         <li>
                             <button onClick={handleLogout}>Log Out</button>
                         </li>
                     </ul>
                 </div>
-                <button className="menu__toggle" onClick={toggleSidebar}>
-                    <i className={`ri-menu-4-line ${isActive ? "active" : ""}`}>
-                        <img src={Hamburger} className="hamburger" alt="navMenu" />
-                    </i>
-                </button>
+
             </div>
         </div>
     );
